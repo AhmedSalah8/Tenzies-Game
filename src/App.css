@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: #123a53;
+  height: 100vh;
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-contianer {
+  margin: auto;
+  display: flex;
+  width: 590px;
+  height: 619px;
+  padding: 30px 20px 29px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  background: #0b2434;
+  border-radius: 10px;
+}
+
+.tenzies-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 34em;
+  height: 450px;
+  padding: 33.28px 34.56px 33.92px 34.56px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #f5f5f5;
+  flex-direction: column;
+}
+
+.dice {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  place-items: center;
+  gap: 25px;
+}
+
+.numbers {
+  width: 65px;
+  height: 65px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.numbers > h1 {
+  color: #2b283a;
+  text-align: center;
+  font-family: Karla;
+  font-size: 3rem !important;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.roll-dice {
+  width: 150px;
+  height: 50px;
+  background-color: #5035ff;
+  margin-top: 25px;
+  color: #fff;
+  text-align: center;
+  font-family: Karla;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+}
+
+.roll-dice:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
+.title {
+  font-size: 40px;
+  margin: 0;
+  color: white;
+}
+
+.instructions {
+  color: white;
+
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
+}
+
+.red-text {
+  color: red;
+  font-size: 30px;
+}
+.green-text {
+  color: green;
+  font-size: 30px;
+}
+@media (max-width: 700px) {
+  .main-contianer {
+    width: 420px;
+    height: fit-content;
+  }
+
+  .tenzies-container {
+    width: 380px;
+    height: 300px;
+  }
+  .dice {
+    width: 350px;
+  }
+  .numbers {
+    width: 50px;
+    height: 50px;
+  }
+  .numbers > h1 {
+    font-size: 2rem !important;
+  }
+}
+@media (max-width: 480px) {
+  .main-contianer {
+    width: 380px;
+    height: fit-content;
+  }
+
+  .tenzies-container {
+    width: 350px;
+    height: 280px;
+  }
+  .dice {
+    width: 330px;
+    gap: 15px;
+  }
+  .numbers {
+    width: 45px;
+    height: 45px;
+  }
+  .numbers > h1 {
+    font-size: 1.5rem !important;
+  }
+  .roll-dice {
+    width: 100;
+  }
+}
+@media (max-width: 400px) {
+  .main-contianer {
+    width: 340px;
+    height: fit-content;
+  }
+
+  .tenzies-container {
+    width: 320px;
+    height: 280px;
+  }
+  .dice {
+    width: 320px;
+    gap: 15px 12px;
+  }
+  .numbers {
+    width: 45px;
+    height: 45px;
+  }
+  .numbers > h1 {
+    font-size: 1.5rem !important;
+  }
+  .roll-dice {
+    width: 100;
+  }
+}
