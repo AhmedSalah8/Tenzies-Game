@@ -110,6 +110,14 @@ body {
   color: green;
   font-size: 30px;
 }
+
+.end-text {
+  color: white;
+  font-size: 20px;
+}
+.name {
+  font-size: 24px;
+}
 @media (max-width: 700px) {
   .main-contianer {
     width: 420px;

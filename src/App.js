@@ -124,6 +124,9 @@ function App() {
 
         {tenzies && <Confetti width={windowWidth} height={900} />}
       </div>
+      <p className="end-text">
+        All rights reserved to <span className="name">Ahmed Salah</span>
+      </p>
     </main>
   );
 }
