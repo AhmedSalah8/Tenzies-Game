@@ -122,7 +122,7 @@ function App() {
           </button>
         )}
 
-        {tenzies && <Confetti width={windowWidth} height={900} />}
+        {tenzies && <Confetti width={windowWidth} height={700} />}
       </div>
       <p className="end-text">
         All rights reserved to <span className="name">Ahmed Salah</span>
